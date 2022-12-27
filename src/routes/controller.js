@@ -4,11 +4,7 @@ const home = (request, response) => {
         console.log('método post')
     }
 
-    response.render('home.ejs', {
-        people: [
-            {name: 'Antonio', age: 29}
-        ]
-    })
+    response.render('home.ejs')
 }
 
 const signin = (request, response) => {

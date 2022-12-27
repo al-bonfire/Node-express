@@ -1,9 +1,13 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-if (!process.env.MYSQL_HOST) {
+
+if (process.env.NODE_ENV == 'PROD') {
+    process.env.MYSQL_HOST = 'mysql'
+} else {
     process.env.MYSQL_HOST = 'localhost'
-} 
+}
+
 
 const database = new Sequelize(
     process.env.MYSQL_DATABASE,
