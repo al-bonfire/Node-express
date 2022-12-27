@@ -6,7 +6,7 @@ const home = (request, response) => {
 
     response.render('home.ejs', {
         people: [
-            {name: 'Antonio', age: 28}
+            {name: 'Antonio', age: 29}
         ]
     })
 }
