@@ -4,5 +4,5 @@ app = create_app()
 
 app.listen(
     Number(process.env.EXPRESS_PORT), () => {
-    console.log("Listening on port 5000...")
+    console.log(`Listening on port ${process.env.EXPRESS_PORT}...`)
 })
