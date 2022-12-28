@@ -2,19 +2,6 @@ version: '3.8'
 
 services:
 
-  nginx:
-    container_name: nginx
-    build:
-      context: .
-      dockerfile: ./nginx/nginx.dockerfile
-    image: nginx
-    ports:
-      - 80:80
-    depends_on:
-      - express
-    volumes:
-      - static_volume:/home/app/static/
-
   mysql:
     image: mysql:5.7
     container_name: mysql
