@@ -1,7 +1,7 @@
 const user = require('./user')
 
 function init_routes(app) {
-    app.use('', user.router)
+    app.use('/node', user.router)
 }
 
 module.exports = {
