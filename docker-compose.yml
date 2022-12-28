@@ -19,8 +19,8 @@ services:
     env_file: ./.env
     environment:
       NODE_ENV: 'PROD'
-    ports:
-      - 5000:5000
+    expose:
+      - "5000"
     stdin_open: true
     tty: true
     depends_on:
